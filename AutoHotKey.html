@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>AutoHotKey(AHK)</title>
+    </head>
+    <body>
+        <h1>AutoHotKey(AHK)</h1>
+        <hr>
+        <h2>Basics</h2>
+        <p>AutoHotKey is a language that is used for automation of simple tasks with a keypress. It can be used to do all sorts of things for example it can make one shortcut trigger another, or press a key, or move and click a mouse. This whole page is about AHK v2 because version 1 is now deprecated.</p>
+        <hr>
+        <h2>Syntax</h2>
+        <p>AutoHotKey has a very simple syntax the way it works is first you choose the key you want for example say I wanted to do the X key I would type x:: then after that I would tell it what to do. If I wanted it to do multiple things I would use {} to make multiple things from one trigger. If I wanted to do a shortcut like windows x then I would do #x, this is because in AutoHotKey since the command keys don't have letters assigned to them. Here is what they are ! is the alt key, + is the shift key, ^ is the control key, and windows is the # key. You can also use multiple of these keys for example ^+x would be control shift x.</p>
+        <hr>
+        <h2>Table Of Important Commands</h2>
+        <p>Here is a table of all the important/helpful commands I have learned so far.</p>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <th>Name</th>
+                <th>What It Does</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td>MsgBox</td>
+                <td>This command displays a windows message box with whatever data you put into it</td>
+                <td>MsgBox 'Hello World'</td>
+            </tr>
+            <tr>
+                <td>Sleep</td>
+                <td>This command tells a program to wait a certain amount of time in milliseconds</td>
+                <td>Sleep 1000</td>
+            </tr>
+            <tr>
+                <td>Click</td>
+                <td>This command registers a mouse click at the current mouse position</td>
+                <td>Click</td>
+            </tr>
+            <tr>
+                <td>Loop #number {}</td>
+                <td>This command repeats whatever you put in it however many times you select, the number next to it is the amount of times it loops.</td>
+                <td>Loop 1000 {}</td>
+            </tr>
+            <tr>
+                <td>ExitApp</td>
+                <td>This command ends the script that is running.</td>
+                <td>ExitApp</td>
+            </tr>
+            <tr>
+                <td>Pause</td>
+                <td>This command either pauses the script unpauses the script or toggles between the two the number 1 is pause 0 is unpause and -1 is toggle</td>
+                <td>Pause -1</td>
+            </tr>
+        </table>
+
+    </body>
+
+
+</html>
