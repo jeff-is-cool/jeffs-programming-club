@@ -4,9 +4,25 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>AutoHotKey(AHK)</title>
+        <style>
+            @font-face {
+                font-family: "Cascadia Mono";
+                src: url("fonts/CascadiaMono.ttf") format("truetype");
+            }
+            body {
+                background-color: blanchedalmond;
+                color: #4682B4;
+                font-family: "Cascadia Mono", monospace;
+            }
+            button{
+                display: inline;
+                float: right;
+            }
+        </style>
+
     </head>
     <body>
-        <h1>AutoHotKey(AHK)</h1>
+        <h1>AutoHotKey(AHK)</h1><button type="button" onclick="lightMode()">Light Mode</button> <button type="button" onclick="darkMode()">Dark Mode</button>
         <hr>
         <h2>Basics</h2>
         <p>AutoHotKey is a language that is used for automation of simple tasks with a keypress. It can be used to do all sorts of things for example it can make one shortcut trigger another, or press a key, or move and click a mouse. This whole page is about AHK v2 because version 1 is now deprecated.</p>
