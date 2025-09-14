@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roman to Integer Converter</title>
+            <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+            @font-face {
+                font-family: "Cascadia Mono";
+                src: url("fonts/CascadiaMono.ttf") format("truetype");
+            }
+            body {
+                background-color: blanchedalmond;
+                color: #4682B4;
+                font-family: "Cascadia Mono", monospace;
+            }
+            button{
+                display: inline;
+                float: right;
+            }
+        </style>
+
+</head>
+<body id = "club24">
+    <h1>Roman to Integer Converter</h1><button type="button" onclick="lightMode()">Light Mode</button> <button type="button" onclick="darkMode()">Dark Mode</button>
+
+    
+    <label for="romanInput">Enter Roman numeral:</label>
+    <input type="text" id="romanInput" placeholder="e.g., MCMXCIV">
+    <button id="convertBtn">Convert</button>
+
+    <p id="result"></p>
+
+    <script>
+class Solution {
+    romanToInt(s) {
+        let total = 0;
+        const romanValues = {
+            'I': 1,
+            'V': 5,
+            'X': 10,
+            'L': 50,
+            'C': 100,
+            'D': 500,
+            'M': 1000
+        };
+        const n = s.length;
+        for (let i = 0; i < n; i++) {
+            const value = romanValues[s[i]];
+            if (i + 1 < n && value < romanValues[s[i + 1]]) {
+                total -= value;
+            } else {
+                total += value;
+            }
+        }
+        return total;
+    }
+}
+
+// Function to run on button click
+function convertRoman() {
+    const s = document.getElementById("romanInput").value.toUpperCase();
+    const solution = new Solution();
+    const result = solution.romanToInt(s);
+    document.getElementById("result").innerText = `Integer value: ${result}`;
+}
+
+// Attach click event
+document.getElementById("convertBtn").addEventListener("click", convertRoman);
+    </script>
+    <script src="DarkMode.js"></script>
+    <script src="LightMode.js"></script>
+</body>
+</html>
