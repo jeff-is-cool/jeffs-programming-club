@@ -1,0 +1,13 @@
+            @font-face {
+                font-family: "Cascadia Mono";
+                src: url("fonts/CascadiaMono.ttf") format("truetype");
+            }
+            body {
+                background-color: blanchedalmond;
+                color: #4682B4;
+                font-family: "Cascadia Mono", monospace;
+            }
+            button{
+                display: inline;
+                float: right;
+            }
