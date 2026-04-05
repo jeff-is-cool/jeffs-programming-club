@@ -11,8 +11,8 @@
                 src: url("fonts/CascadiaMono.ttf") format("truetype");
             }
             body {
-                background-color: blanchedalmond;
-                color: #4682B4;
+                background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(12, 11, 107));
+                color: #2A9D8F;
                 font-family: "Cascadia Mono", monospace;
             }
             button{
@@ -31,13 +31,36 @@
                 object-fit: cover;
 
             }
+            #Title1{
+                text-align: center;
+            }
+            .modeButton {
+                border: 1;
+                border-radius: 15px;
+                cursor: pointer;
+                transition: 0.3s;
+                background-color: rgb(12, 11, 107);
+                color: #2A9D8F;
+                font-weight: 900;
+            }
+            #lightButton:hover{
+                background-color: rgb(255, 255, 255);
+                transform: translateY(-3px) scale(1.2);
+                box-shadow: 0 10px 20px rgba(255, 255, 255, 0.6);
+            }
+            #darkButton:hover{
+                background-color: rgb(0, 0, 0);
+                transform: translateY(-3px) scale(1.2);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+            }
         </style>
     </head>
     <body id="club24">
         <div id="loader">
                 <img src="LoadingAnimation_ManimCE_v0.19.0.gif" alt="Loading Animation">
         </div>        
-        <h1>Jeff's Programming Club</h1><button type="button" onclick="lightMode()">Light Mode</button> <button type="button" onclick="darkMode()">Dark Mode</button>
+        <h1 id="Title1">Jeff's Programming Club</h1><button id="lightButton" class="modeButton" type="button" onclick="lightMode()">Light Mode</button> <button id= "darkButton" class="modeButton" type="button" onclick="darkMode()">Dark Mode</button>
+        <hr>
         <script src="DarkMode.js"></script>
         <script src="LightMode.js"></script>
         <script src="GifLoader.js"></script>
@@ -74,7 +97,7 @@
         <h2>Cool programs by me</h2>
         <ul>
             <li><a href = "Breakout-JavaScript/index.html">Breakout-javascript</a></li>
-            <li><a href noteo-download.html>Noteo</a></li>
+            <li><a href = "noteo-download.html">Noteo</a></li>
             <li><a href = "roman.html">Roman Numeral To Integer</a></li>
         </ul>
         <script data-goatcounter="https://jeff-is-cool.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
