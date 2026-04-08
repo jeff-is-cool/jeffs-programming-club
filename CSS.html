@@ -4,24 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>CSS</title>
-        <style>
-            @font-face {
-                font-family: "Cascadia Mono";
-                src: url("fonts/CascadiaMono.ttf") format("truetype");
-            }
-            body {
-                background-color: blanchedalmond;
-                color: #4682B4;
-                font-family: "Cascadia Mono", monospace;
-            }
-            button{
-                display: inline;
-                float: right;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="Style.css">
     </head>
     <body id="club24">
-        <h1>CSS</h1><button type="button" onclick="lightMode()">Light Mode</button> <button type="button" onclick="darkMode()">Dark Mode</button>
+        <h1>CSS</h1><button id="lightButton" class="modeButton" type="button" onclick="lightMode()">Light Mode</button> <button id="darkButton" class="modeButton" type="button" onclick="darkMode()">Dark Mode</button>
         <hr>
         <h2>Basics</h2>
         <p>CSS is a programming language used to style markup languages. It is commonly used with html to style and make websites look good. CSS stands for Cascading Style Sheets.</p>

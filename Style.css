@@ -3,11 +3,47 @@
                 src: url("fonts/CascadiaMono.ttf") format("truetype");
             }
             body {
-                background-color: blanchedalmond;
-                color: #4682B4;
+                height: 100vh;
+                min-height: 100vh;
+                background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(12, 11, 107));
+                color: #2A9D8F;
                 font-family: "Cascadia Mono", monospace;
             }
             button{
                 display: inline;
                 float: right;
+            }
+            #loader{
+                position: fixed;
+                background: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 1000;
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+
+            }
+            #Title1{
+                text-align: center;
+            }
+            .modeButton {
+                border: 1;
+                border-radius: 15px;
+                cursor: pointer;
+                transition: 0.3s;
+                background-color: rgb(12, 11, 107);
+                color: #2A9D8F;
+                font-weight: 900;
+            }
+            #lightButton:hover{
+                background-color: rgb(255, 255, 255);
+                transform: translateY(-3px) scale(1.2);
+                box-shadow: 0 10px 20px rgba(255, 255, 255, 0.6);
+            }
+            #darkButton:hover{
+                background-color: rgb(0, 0, 0);
+                transform: translateY(-3px) scale(1.2);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
             }

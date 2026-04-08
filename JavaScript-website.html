@@ -4,25 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Javascript-Website</title>
-        <style>
-            @font-face {
-                font-family: "Cascadia Mono";
-                src: url("fonts/CascadiaMono.ttf") format("truetype");
-            }
-            body {
-                background-color: blanchedalmond;
-                color: #4682B4;
-                font-family: "Cascadia Mono", monospace;
-            }
-            button{
-                display: inline;
-                float: right;
-            }
-        </style>
-
+        <link rel="stylesheet" type="text/css" href="Style.css">
     </head>
     <body id="club24">
-        <H1>Javascript-Website</H1><button type="button" onclick="lightMode()">Light Mode</button> <button type="button" onclick="darkMode()">Dark Mode</button>
+        <H1>Javascript-Website</H1><button id="lightButton" class="modeButton" type="button" onclick="lightMode()">Light Mode</button> <button id="darkButton" class="modeButton" type="button" onclick="darkMode()">Dark Mode</button>
         <hr>
         <h2>Basics</h2>
         <p>JavaScript is a programming language used to make things do things. For example when a button is pressed it does something. JavaScript is written as functions that do something when they are called.</p>

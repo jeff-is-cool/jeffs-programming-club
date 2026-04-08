@@ -5,25 +5,12 @@
             <link rel="icon" href="favicon.ico" type="image/x-icon">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-            <style>
-            @font-face {
-                font-family: "Cascadia Mono";
-                src: url("fonts/CascadiaMono.ttf") format("truetype");
-            }
-            body {
-                background-color: blanchedalmond;
-                color: #4682B4;
-                font-family: "Cascadia Mono", monospace;
-            }
-            button{
-                display: inline;
-                float: right;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="Style.css">
+
 
 </head>
 <body id = "club24">
-    <h1>Roman to Integer Converter</h1><button type="button" onclick="lightMode()">Light Mode</button> <button type="button" onclick="darkMode()">Dark Mode</button>
+    <h1>Roman to Integer Converter</h1><button id="lightButton" class="modeButton" type="button" onclick="lightMode()">Light Mode</button> <button id="darkButton" class="modeButton" type="button" onclick="darkMode()">Dark Mode</button>
 
     
     <label for="romanInput">Enter Roman numeral:</label>
