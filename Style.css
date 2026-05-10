@@ -47,3 +47,83 @@
                 transform: translateY(-3px) scale(1.2);
                 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
             }
+            #title0 {
+                font-size: 48px;
+                text-align: center;
+            }
+            #Program-Square-Image {
+                max-width: 250px;
+                padding: 20px;
+            }
+            #RomanToInt:hover #Program-Square-Image {
+                transform: translateY(-3px) scale(1.2) ;
+                border-radius: 35px;
+                border: 1;
+                padding: 0;
+                outline-style: solid;
+                outline-width: 5px;
+                outline-color: #2A9D8F;
+                filter: brightness(50%)
+            }
+            #TheGrid {
+                display: grid;
+                width: 85vw;
+                max-width: 1350px;
+                height: 100vh;
+                border-radius: 20px;
+                grid-auto-rows: min-content;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 165px;
+                justify-content: start;
+                align-content: start;
+                box-sizing: border-box;
+
+            }
+            #RomanToInt:hover  #RomanToIntText {
+                opacity: 1;
+            }
+            #RomanToIntText {
+                position:relative;
+                bottom: 270px;
+                width: fit-content;
+                max-width: 100000px;
+                right: 0px;
+                display:grid;
+                color: white;
+                font-size: 2em;
+                opacity: 0;
+                transition: opacity 0s;
+            } 
+            #RomanToInt {
+                height: 300px;
+                width: 275px;
+            }
+                #Breakout:hover #Program-Square-Image {
+                transform: translateY(-3px) scale(1.2) ;
+                border-radius: 35px;
+                border: 1;
+                padding: 0;
+                outline-style: solid;
+                outline-width: 5px;
+                outline-color: #2A9D8F;
+                filter: brightness(50%)
+            }
+                #BreakoutText {
+                position:relative;
+                bottom: 270px;
+                width: fit-content;
+                max-width: 100000px;
+                right: 0px;
+                display:grid;
+                color: white;
+                font-size: 2em;
+                opacity: 0;
+                transition: opacity 0s;
+            } 
+            #Breakout {
+                height: 300px;
+                width: 275px;
+            }
+            #Breakout:hover  #BreakoutText {
+                opacity: 1;
+            }
