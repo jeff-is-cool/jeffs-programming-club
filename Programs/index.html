@@ -6,6 +6,118 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="../Style.css">
+        <style>
+
+            #title0 {
+                font-size: 48px;
+                text-align: center;
+            }
+            #Program-Square-Image {
+                max-width: 250px;
+                padding: 20px;
+            }
+            #RomanToInt:hover #Program-Square-Image {
+                transform: translateY(-3px) scale(1.2) ;
+                border-radius: 35px;
+                border: 1;
+                padding: 0;
+                outline-style: solid;
+                outline-width: 5px;
+                outline-color: #2A9D8F;
+                filter: brightness(50%)
+            }
+            #TheGrid {
+                display: grid;
+                width: 85vw;
+                max-width: 1350px;
+                height: 100vh;
+                border-radius: 20px;
+                grid-auto-rows: min-content;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: max(87px, 4.5vw);
+                justify-content: start;
+                align-content: start;
+                box-sizing: border-box;
+
+            }
+            #RomanToInt:hover  #RomanToIntText {
+                opacity: 1;
+            }
+            #RomanToIntText {
+                position:relative;
+                bottom: 270px;
+                width: fit-content;
+                max-width: 100000px;
+                right: 0px;
+                display:grid;
+                color: white;
+                font-size: 2em;
+                opacity: 0;
+                transition: opacity 0s;
+            } 
+            #RomanToInt {
+                height: 300px;
+                width: 275px;
+            }
+                #Breakout:hover #Program-Square-Image {
+                transform: translateY(-3px) scale(1.2) ;
+                border-radius: 35px;
+                border: 1;
+                padding: 0;
+                outline-style: solid;
+                outline-width: 5px;
+                outline-color: #2A9D8F;
+                filter: brightness(50%)
+            }
+                #BreakoutText {
+                position:relative;
+                bottom: 270px;
+                width: fit-content;
+                max-width: 100000px;
+                right: 0px;
+                display:grid;
+                color: white;
+                font-size: 2em;
+                opacity: 0;
+                transition: opacity 0s;
+            } 
+            #Breakout {
+                height: 300px;
+                width: 275px;
+            }
+            #Breakout:hover  #BreakoutText {
+                opacity: 1;
+            }
+            #Noteo:hover #Program-Square-Image {
+                transform: translateY(-3px) scale(1.2) ;
+                border-radius: 35px;
+                border: 1;
+                padding: 0;
+                outline-style: solid;
+                outline-width: 5px;
+                outline-color: #2A9D8F;
+                filter: brightness(50%)
+            }
+            #NoteoText {
+                position:relative;
+                bottom: 270px;
+                width: fit-content;
+                max-width: 100000px;
+                right: 0px;
+                display:grid;
+                color: white;
+                font-size: 2em;
+                opacity: 0;
+                transition: opacity 0s;
+            } 
+            #Noteo {
+                height: 300px;
+                width: 275px;
+            }
+            #Noteo:hover  #NoteoText {
+                opacity: 1;
+            }
+        </style>
 
 
 </head>
@@ -14,7 +126,8 @@
     <hr>
     <div id="TheGrid">
         <div id="RomanToInt" class="Program-Square"> <a href="roman.html"><img id="Program-Square-Image"src="../Images/RomanToInt.png"></a><div id="RomanToIntText">A simple program that will convert a Roman numeral to an integer</div></div>
-        <div id="Breakout" class="Program-Square"><a href="../Breakout-JavaScript/index.html"><img id="Program-Square-Image" src="../Images/Breakout.png"></a> <div id="BreakoutText">A fun classic breakout video game written in javascript</div>
+        <div id="Breakout" class="Program-Square"><a href="../Breakout-JavaScript/index.html"><img id="Program-Square-Image" src="../Images/Breakout.png"></a> <div id="BreakoutText">A fun classic breakout video game written in javascript</div></div>
+        <div id="Noteo" class="Program-Square"><a href="noteo-download.html"><img id="Program-Square-Image" src="../Images/Noteo.png"></a> <div id="NoteoText">A basic graphical text editor using python</div></div>
     </div>
     <script src="../DarkMode.js"></script>
     <script src="../LightMode.js"></script>
