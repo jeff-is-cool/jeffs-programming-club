@@ -117,6 +117,36 @@
             #Noteo:hover  #NoteoText {
                 opacity: 1;
             }
+            #TaskList:hover #Program-Square-Image {
+                transform: translateY(-3px) scale(1.2) ;
+                border-radius: 35px;
+                border: 1;
+                padding: 0;
+                outline-style: solid;
+                outline-width: 5px;
+                outline-color: #2A9D8F;
+                filter: brightness(50%)
+            }
+            #TaskListText {
+                position:relative;
+                bottom: 270px;
+                width: fit-content;
+                max-width: 100000px;
+                right: 0px;
+                display:grid;
+                color: white;
+                font-size: 2em;
+                opacity: 0;
+                transition: opacity 0s;
+            } 
+            #TaskList {
+                height: 300px;
+                width: 275px;
+            }
+            #TaskList:hover  #TaskListText {
+                opacity: 1;
+            }
+
         </style>
 
 
@@ -126,6 +156,7 @@
     <hr>
     <div id="TheGrid">
         <div id="RomanToInt" class="Program-Square"> <a href="roman.html"><img id="Program-Square-Image"src="../Images/RomanToInt.png"></a><div id="RomanToIntText">A simple program that will convert a Roman numeral to an integer</div></div>
+        <div id="TaskList" class="Program-Square"><a href="TaskList/index.html"><img id="Program-Square-Image" src="../Images/Tasklist.png"></a> <div id="TaskListText">A to-do list app made with javascript</div></div>
         <div id="Breakout" class="Program-Square"><a href="../Breakout-JavaScript/index.html"><img id="Program-Square-Image" src="../Images/Breakout.png"></a> <div id="BreakoutText">A fun classic breakout video game written in javascript</div></div>
         <div id="Noteo" class="Program-Square"><a href="noteo-download.html"><img id="Program-Square-Image" src="../Images/Noteo.png"></a> <div id="NoteoText">A basic graphical text editor using python</div></div>
     </div>

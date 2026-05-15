@@ -9,10 +9,6 @@
                 color: #2A9D8F;
                 font-family: "Cascadia Mono", monospace;
             }
-            button{
-                display: inline;
-                float: right;
-            }
             #loader{
                 position: fixed;
                 background: white;
@@ -35,7 +31,9 @@
                 transition: 0.3s;
                 background-color: rgb(12, 11, 107);
                 color: #2A9D8F;
-                font-weight: 900;
+                font-weight: 900;                
+                display: inline;
+                float: right;
             }
             #lightButton:hover{
                 background-color: rgb(255, 255, 255);
@@ -46,4 +44,8 @@
                 background-color: rgb(0, 0, 0);
                 transform: translateY(-3px) scale(1.2);
                 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+            }
+            .title-center {
+                font-size: 48px;
+                text-align: center;
             }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Task-List</title>
+        <link rel="stylesheet" type="text/css" href="../../Style.css">
+        <style>
+            .update-controller{
+                display: none;
+            }
+            button{
+                border: 1;
+                border-radius: 15px;
+                cursor: pointer;
+                transition: 0.3s;
+                background-color: rgb(12, 11, 107);
+                color: #2A9D8F;
+                font-weight: 900; 
+            }
+            button:hover{
+                transform: translateY(-3px) scale(1.2);
+            }
+        </style>
+    </head>
+    <body id="club24">
+        <h1 class="title-center">Task-List</h1><button id="lightButton" class="modeButton" type="button" onclick="lightMode()">Light Mode</button> <button id="darkButton" class="modeButton" type="button" onclick="darkMode()">Dark Mode</button>
+        <hr>
+        <div class="input-header">
+            <h1><span id="date"></span></h1>
+            <div class="todo-input">
+                <input type="text" id="item" placeholder="Enter a task here"><button id="enter">Enter</button>
+            </div>
+        </div>
+        <div class="to-do-list"></div>
+        <script src="script.js"></script>
+        
+        <script src="../../DarkMode.js"></script>
+        <script src="../../LightMode.js"></script>
+    </body>
+</html>
